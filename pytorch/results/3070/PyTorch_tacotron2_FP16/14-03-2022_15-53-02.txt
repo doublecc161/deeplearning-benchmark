@@ -1,0 +1,235 @@
+DLL 2022-03-14 15:53:04.006368 - PARAMETER output : ./ 
+DLL 2022-03-14 15:53:04.006415 - PARAMETER dataset_path : /data/tacotron2/LJSpeech-1.1 
+DLL 2022-03-14 15:53:04.006437 - PARAMETER model_name : Tacotron2 
+DLL 2022-03-14 15:53:04.006453 - PARAMETER log_file : nvlog.json 
+DLL 2022-03-14 15:53:04.006467 - PARAMETER anneal_steps : None 
+DLL 2022-03-14 15:53:04.006483 - PARAMETER anneal_factor : 0.1 
+DLL 2022-03-14 15:53:04.006499 - PARAMETER epochs : 2 
+DLL 2022-03-14 15:53:04.006515 - PARAMETER epochs_per_checkpoint : 50 
+DLL 2022-03-14 15:53:04.006530 - PARAMETER checkpoint_path :  
+DLL 2022-03-14 15:53:04.006544 - PARAMETER resume_from_last : False 
+DLL 2022-03-14 15:53:04.006558 - PARAMETER dynamic_loss_scaling : True 
+DLL 2022-03-14 15:53:04.006573 - PARAMETER amp : True 
+DLL 2022-03-14 15:53:04.006587 - PARAMETER cudnn_enabled : True 
+DLL 2022-03-14 15:53:04.006600 - PARAMETER cudnn_benchmark : False 
+DLL 2022-03-14 15:53:04.006614 - PARAMETER disable_uniform_initialize_bn_weight : False 
+DLL 2022-03-14 15:53:04.006627 - PARAMETER use_saved_learning_rate : False 
+DLL 2022-03-14 15:53:04.006641 - PARAMETER learning_rate : 0.0 
+DLL 2022-03-14 15:53:04.006656 - PARAMETER weight_decay : 1e-06 
+DLL 2022-03-14 15:53:04.006670 - PARAMETER grad_clip_thresh : 1.0 
+DLL 2022-03-14 15:53:04.006684 - PARAMETER batch_size : 32 
+DLL 2022-03-14 15:53:04.006698 - PARAMETER grad_clip : 5.0 
+DLL 2022-03-14 15:53:04.006711 - PARAMETER load_mel_from_disk : False 
+DLL 2022-03-14 15:53:04.006724 - PARAMETER training_files : filelists/ljs_audio_text_train_subset_625_filelist.txt 
+DLL 2022-03-14 15:53:04.006738 - PARAMETER validation_files : filelists/ljs_audio_text_val_filelist.txt 
+DLL 2022-03-14 15:53:04.006751 - PARAMETER text_cleaners : ['english_cleaners'] 
+DLL 2022-03-14 15:53:04.006766 - PARAMETER max_wav_value : 32768.0 
+DLL 2022-03-14 15:53:04.006781 - PARAMETER sampling_rate : 22050 
+DLL 2022-03-14 15:53:04.006794 - PARAMETER filter_length : 1024 
+DLL 2022-03-14 15:53:04.006808 - PARAMETER hop_length : 256 
+DLL 2022-03-14 15:53:04.006821 - PARAMETER win_length : 1024 
+DLL 2022-03-14 15:53:04.006834 - PARAMETER mel_fmin : 0.0 
+DLL 2022-03-14 15:53:04.006847 - PARAMETER mel_fmax : 8000.0 
+DLL 2022-03-14 15:53:04.006862 - PARAMETER rank : 0 
+DLL 2022-03-14 15:53:04.006875 - PARAMETER world_size : 1 
+DLL 2022-03-14 15:53:04.006888 - PARAMETER dist_url : tcp://localhost:23456 
+DLL 2022-03-14 15:53:04.006901 - PARAMETER group_name : group_name 
+DLL 2022-03-14 15:53:04.006914 - PARAMETER dist_backend : nccl 
+DLL 2022-03-14 15:53:04.006928 - PARAMETER bench_class :  
+DLL 2022-03-14 15:53:04.006941 - PARAMETER model_name : Tacotron2_PyT 
+Selected optimization level O1:  Insert automatic casts around Pytorch functions and Tensor methods.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+DLL 2022-03-14 15:53:06.382495 - (0, 0) glob_iter/iters_per_epoch : 0/19 
+DLL 2022-03-14 15:53:08.461907 - (0, 0) train_loss : 47.16141891479492 
+DLL 2022-03-14 15:53:09.517803 - (0, 0) train_items_per_sec : 5755.343817195873 
+DLL 2022-03-14 15:53:09.517862 - (0, 0) train_iter_time : 3.1353470050016767 
+DLL 2022-03-14 15:53:09.520370 - (0, 1) glob_iter/iters_per_epoch : 1/19 
+DLL 2022-03-14 15:53:10.678044 - (0, 1) train_loss : 46.355648040771484 
+DLL 2022-03-14 15:53:11.635998 - (0, 1) train_items_per_sec : 8426.30518213523 
+DLL 2022-03-14 15:53:11.636058 - (0, 1) train_iter_time : 2.1156366420000268 
+DLL 2022-03-14 15:53:11.640145 - (0, 2) glob_iter/iters_per_epoch : 2/19 
+DLL 2022-03-14 15:53:12.785716 - (0, 2) train_loss : 49.07362365722656 
+DLL 2022-03-14 15:53:13.717051 - (0, 2) train_items_per_sec : 8917.558281583051 
+DLL 2022-03-14 15:53:13.717111 - (0, 2) train_iter_time : 2.0769138159994327 
+DLL 2022-03-14 15:53:13.722550 - (0, 3) glob_iter/iters_per_epoch : 3/19 
+DLL 2022-03-14 15:53:14.920132 - (0, 3) train_loss : 50.09812927246094 
+DLL 2022-03-14 15:53:15.855525 - (0, 3) train_items_per_sec : 8766.131303743057 
+DLL 2022-03-14 15:53:15.855588 - (0, 3) train_iter_time : 2.1329819679995126 
+DLL 2022-03-14 15:53:15.864601 - (0, 4) glob_iter/iters_per_epoch : 4/19 
+DLL 2022-03-14 15:53:16.997670 - (0, 4) train_loss : 48.741390228271484 
+DLL 2022-03-14 15:53:17.910163 - (0, 4) train_items_per_sec : 8623.03416917029 
+DLL 2022-03-14 15:53:17.910237 - (0, 4) train_iter_time : 2.0455676800011133 
+DLL 2022-03-14 15:53:17.919411 - (0, 5) glob_iter/iters_per_epoch : 5/19 
+DLL 2022-03-14 15:53:19.081809 - (0, 5) train_loss : 52.45060729980469 
+DLL 2022-03-14 15:53:20.015871 - (0, 5) train_items_per_sec : 9425.36480022156 
+DLL 2022-03-14 15:53:20.015931 - (0, 5) train_iter_time : 2.0964705789992877 
+DLL 2022-03-14 15:53:20.021865 - (0, 6) glob_iter/iters_per_epoch : 6/19 
+DLL 2022-03-14 15:53:21.196246 - (0, 6) train_loss : 50.43195343017578 
+DLL 2022-03-14 15:53:22.162771 - (0, 6) train_items_per_sec : 9031.653944661486 
+DLL 2022-03-14 15:53:22.162832 - (0, 6) train_iter_time : 2.140914622999844 
+DLL 2022-03-14 15:53:22.167858 - (0, 7) glob_iter/iters_per_epoch : 7/19 
+DLL 2022-03-14 15:53:23.326650 - (0, 7) train_loss : 45.500587463378906 
+DLL 2022-03-14 15:53:24.284482 - (0, 7) train_items_per_sec : 8137.928116048496 
+DLL 2022-03-14 15:53:24.284544 - (0, 7) train_iter_time : 2.1166321150012664 
+DLL 2022-03-14 15:53:24.289485 - (0, 8) glob_iter/iters_per_epoch : 8/19 
+DLL 2022-03-14 15:53:25.451821 - (0, 8) train_loss : 48.193511962890625 
+DLL 2022-03-14 15:53:26.391461 - (0, 8) train_items_per_sec : 8658.015882684258 
+DLL 2022-03-14 15:53:26.391521 - (0, 8) train_iter_time : 2.101982746000431 
+DLL 2022-03-14 15:53:26.398157 - (0, 9) glob_iter/iters_per_epoch : 9/19 
+DLL 2022-03-14 15:53:27.555495 - (0, 9) train_loss : 48.26779556274414 
+DLL 2022-03-14 15:53:28.481735 - (0, 9) train_items_per_sec : 8584.72327447955 
+DLL 2022-03-14 15:53:28.481796 - (0, 9) train_iter_time : 2.083584924999741 
+DLL 2022-03-14 15:53:28.487388 - (0, 10) glob_iter/iters_per_epoch : 10/19 
+DLL 2022-03-14 15:53:29.664963 - (0, 10) train_loss : 46.107635498046875 
+DLL 2022-03-14 15:53:30.620703 - (0, 10) train_items_per_sec : 8381.76096003224 
+DLL 2022-03-14 15:53:30.620763 - (0, 10) train_iter_time : 2.133322589997988 
+DLL 2022-03-14 15:53:30.626982 - (0, 11) glob_iter/iters_per_epoch : 11/19 
+DLL 2022-03-14 15:53:31.773923 - (0, 11) train_loss : 42.92131805419922 
+DLL 2022-03-14 15:53:32.691469 - (0, 11) train_items_per_sec : 7765.580412460474 
+DLL 2022-03-14 15:53:32.691529 - (0, 11) train_iter_time : 2.0644947510008933 
+DLL 2022-03-14 15:53:32.698063 - (0, 12) glob_iter/iters_per_epoch : 12/19 
+DLL 2022-03-14 15:53:33.867740 - (0, 12) train_loss : 48.5608024597168 
+DLL 2022-03-14 15:53:34.806278 - (0, 12) train_items_per_sec : 8528.029328320528 
+DLL 2022-03-14 15:53:34.806339 - (0, 12) train_iter_time : 2.108224457002507 
+DLL 2022-03-14 15:53:34.812763 - (0, 13) glob_iter/iters_per_epoch : 13/19 
+DLL 2022-03-14 15:53:35.980555 - (0, 13) train_loss : 48.635128021240234 
+DLL 2022-03-14 15:53:36.924165 - (0, 13) train_items_per_sec : 8647.304452133612 
+DLL 2022-03-14 15:53:36.924225 - (0, 13) train_iter_time : 2.1114094109980215 
+DLL 2022-03-14 15:53:36.930780 - (0, 14) glob_iter/iters_per_epoch : 14/19 
+DLL 2022-03-14 15:53:38.107374 - (0, 14) train_loss : 50.16831588745117 
+DLL 2022-03-14 15:53:39.086431 - (0, 14) train_items_per_sec : 8929.98520758977 
+DLL 2022-03-14 15:53:39.086491 - (0, 14) train_iter_time : 2.155658666000818 
+DLL 2022-03-14 15:53:39.092039 - (0, 15) glob_iter/iters_per_epoch : 15/19 
+DLL 2022-03-14 15:53:40.257714 - (0, 15) train_loss : 46.489898681640625 
+DLL 2022-03-14 15:53:41.223184 - (0, 15) train_items_per_sec : 8330.238453220687 
+DLL 2022-03-14 15:53:41.223244 - (0, 15) train_iter_time : 2.131151478999527 
+DLL 2022-03-14 15:53:41.228343 - (0, 16) glob_iter/iters_per_epoch : 16/19 
+DLL 2022-03-14 15:53:42.394961 - (0, 16) train_loss : 50.24888610839844 
+DLL 2022-03-14 15:53:43.333405 - (0, 16) train_items_per_sec : 9146.965441928938 
+DLL 2022-03-14 15:53:43.333464 - (0, 16) train_iter_time : 2.1050697220016445 
+DLL 2022-03-14 15:53:43.339954 - (0, 17) glob_iter/iters_per_epoch : 17/19 
+DLL 2022-03-14 15:53:44.489660 - (0, 17) train_loss : 43.0836067199707 
+DLL 2022-03-14 15:53:45.432054 - (0, 17) train_items_per_sec : 7730.957146651529 
+DLL 2022-03-14 15:53:45.432115 - (0, 17) train_iter_time : 2.092108349999762 
+DLL 2022-03-14 15:53:45.438234 - (0, 18) glob_iter/iters_per_epoch : 18/19 
+DLL 2022-03-14 15:53:46.594605 - (0, 18) train_loss : 46.881534576416016 
+DLL 2022-03-14 15:53:47.554359 - (0, 18) train_items_per_sec : 8562.314146567442 
+DLL 2022-03-14 15:53:47.554422 - (0, 18) train_iter_time : 2.1161335229990073 
+DLL 2022-03-14 15:53:47.584626 - (0,) train_items_per_sec : 8439.43128004358 
+DLL 2022-03-14 15:53:47.584694 - (0,) train_loss : 46.881534576416016 
+DLL 2022-03-14 15:53:47.584718 - (0,) train_epoch_time : 41.655084529000305 
+/opt/conda/lib/python3.6/site-packages/torch/functional.py:1242: UserWarning: torch.norm is deprecated and may be removed in a future PyTorch release. Use torch.linalg.norm instead.
+  "torch.norm is deprecated and may be removed in a future PyTorch release. "
+DLL 2022-03-14 15:53:49.048131 - (0, 19, 0) val_items_per_sec : 16350.668102411599 
+DLL 2022-03-14 15:53:50.038913 - (0, 19, 1) val_items_per_sec : 17359.078131898343 
+DLL 2022-03-14 15:53:51.053550 - (0, 19, 2) val_items_per_sec : 18186.81726272835 
+DLL 2022-03-14 15:53:51.961639 - (0, 19, 3) val_items_per_sec : 3214.976792100429 
+DLL 2022-03-14 15:53:51.999860 - (0,) val_loss : 51.00020885467529 
+DLL 2022-03-14 15:53:51.999941 - (0,) val_items_per_sec : 13777.88507228468 
+Saving model and optimizer state at epoch 0 to ./checkpoint_Tacotron2_0.pt
+DLL 2022-03-14 15:53:52.743887 - (1, 0) glob_iter/iters_per_epoch : 19/19 
+DLL 2022-03-14 15:53:53.911293 - (1, 0) train_loss : 46.012969970703125 
+DLL 2022-03-14 15:53:54.815977 - (1, 0) train_items_per_sec : 8005.820283960809 
+DLL 2022-03-14 15:53:54.816039 - (1, 0) train_iter_time : 2.072117460997106 
+DLL 2022-03-14 15:53:54.821761 - (1, 1) glob_iter/iters_per_epoch : 20/19 
+DLL 2022-03-14 15:53:55.995711 - (1, 1) train_loss : 47.544857025146484 
+DLL 2022-03-14 15:53:56.946651 - (1, 1) train_items_per_sec : 8705.833790753897 
+DLL 2022-03-14 15:53:56.946712 - (1, 1) train_iter_time : 2.1248969879998185 
+DLL 2022-03-14 15:53:56.953414 - (1, 2) glob_iter/iters_per_epoch : 21/19 
+DLL 2022-03-14 15:53:58.120930 - (1, 2) train_loss : 44.74047088623047 
+DLL 2022-03-14 15:53:59.077076 - (1, 2) train_items_per_sec : 7835.960642814514 
+DLL 2022-03-14 15:53:59.077137 - (1, 2) train_iter_time : 2.1236706970012165 
+DLL 2022-03-14 15:53:59.083605 - (1, 3) glob_iter/iters_per_epoch : 22/19 
+DLL 2022-03-14 15:54:00.261652 - (1, 3) train_loss : 47.9350700378418 
+DLL 2022-03-14 15:54:01.209856 - (1, 3) train_items_per_sec : 8569.978560403282 
+DLL 2022-03-14 15:54:01.209918 - (1, 3) train_iter_time : 2.1262596950000443 
+DLL 2022-03-14 15:54:01.216752 - (1, 4) glob_iter/iters_per_epoch : 23/19 
+DLL 2022-03-14 15:54:02.392333 - (1, 4) train_loss : 51.75883102416992 
+DLL 2022-03-14 15:54:03.327814 - (1, 4) train_items_per_sec : 9198.161615567744 
+DLL 2022-03-14 15:54:03.327875 - (1, 4) train_iter_time : 2.1110740180010907 
+DLL 2022-03-14 15:54:03.335980 - (1, 5) glob_iter/iters_per_epoch : 24/19 
+DLL 2022-03-14 15:54:04.546618 - (1, 5) train_loss : 51.56234359741211 
+DLL 2022-03-14 15:54:05.495506 - (1, 5) train_items_per_sec : 8876.452049383362 
+DLL 2022-03-14 15:54:05.495568 - (1, 5) train_iter_time : 2.15953399999853 
+DLL 2022-03-14 15:54:05.504284 - (1, 6) glob_iter/iters_per_epoch : 25/19 
+DLL 2022-03-14 15:54:06.664001 - (1, 6) train_loss : 53.536128997802734 
+DLL 2022-03-14 15:54:07.612739 - (1, 6) train_items_per_sec : 9450.941297717067 
+DLL 2022-03-14 15:54:07.612800 - (1, 6) train_iter_time : 2.1084672280012455 
+DLL 2022-03-14 15:54:07.617921 - (1, 7) glob_iter/iters_per_epoch : 26/19 
+DLL 2022-03-14 15:54:08.781845 - (1, 7) train_loss : 46.4433708190918 
+DLL 2022-03-14 15:54:09.716449 - (1, 7) train_items_per_sec : 8304.839251807764 
+DLL 2022-03-14 15:54:09.716509 - (1, 7) train_iter_time : 2.0985355009979685 
+DLL 2022-03-14 15:54:09.722501 - (1, 8) glob_iter/iters_per_epoch : 27/19 
+DLL 2022-03-14 15:54:10.889008 - (1, 8) train_loss : 45.38933181762695 
+DLL 2022-03-14 15:54:11.846091 - (1, 8) train_items_per_sec : 8222.363467269555 
+DLL 2022-03-14 15:54:11.846152 - (1, 8) train_iter_time : 2.1235986549982044 
+DLL 2022-03-14 15:54:11.852587 - (1, 9) glob_iter/iters_per_epoch : 28/19 
+DLL 2022-03-14 15:54:13.011302 - (1, 9) train_loss : 51.794158935546875 
+DLL 2022-03-14 15:54:13.986811 - (1, 9) train_items_per_sec : 9060.874582043913 
+DLL 2022-03-14 15:54:13.986873 - (1, 9) train_iter_time : 2.134231063999323 
+DLL 2022-03-14 15:54:13.992696 - (1, 10) glob_iter/iters_per_epoch : 29/19 
+DLL 2022-03-14 15:54:15.131847 - (1, 10) train_loss : 45.36783218383789 
+DLL 2022-03-14 15:54:16.059071 - (1, 10) train_items_per_sec : 8355.1842735626 
+DLL 2022-03-14 15:54:16.059133 - (1, 10) train_iter_time : 2.0663817140011815 
+DLL 2022-03-14 15:54:16.064118 - (1, 11) glob_iter/iters_per_epoch : 30/19 
+DLL 2022-03-14 15:54:17.205389 - (1, 11) train_loss : 49.57792282104492 
+DLL 2022-03-14 15:54:18.127991 - (1, 11) train_items_per_sec : 8888.115829117152 
+DLL 2022-03-14 15:54:18.128053 - (1, 11) train_iter_time : 2.0638794939986838 
+DLL 2022-03-14 15:54:18.133235 - (1, 12) glob_iter/iters_per_epoch : 31/19 
+DLL 2022-03-14 15:54:19.327699 - (1, 12) train_loss : 51.57084274291992 
+DLL 2022-03-14 15:54:20.256819 - (1, 12) train_items_per_sec : 9164.193261373459 
+DLL 2022-03-14 15:54:20.256880 - (1, 12) train_iter_time : 2.123591182000382 
+DLL 2022-03-14 15:54:20.261723 - (1, 13) glob_iter/iters_per_epoch : 32/19 
+DLL 2022-03-14 15:54:21.382149 - (1, 13) train_loss : 49.504085540771484 
+DLL 2022-03-14 15:54:22.281375 - (1, 13) train_items_per_sec : 8921.304120241666 
+DLL 2022-03-14 15:54:22.281436 - (1, 13) train_iter_time : 2.0196598789989366 
+DLL 2022-03-14 15:54:22.287360 - (1, 14) glob_iter/iters_per_epoch : 33/19 
+DLL 2022-03-14 15:54:23.475726 - (1, 14) train_loss : 43.328521728515625 
+DLL 2022-03-14 15:54:24.435912 - (1, 14) train_items_per_sec : 7873.17928970667 
+DLL 2022-03-14 15:54:24.435973 - (1, 14) train_iter_time : 2.148560241999803 
+DLL 2022-03-14 15:54:24.442224 - (1, 15) glob_iter/iters_per_epoch : 34/19 
+DLL 2022-03-14 15:54:25.598361 - (1, 15) train_loss : 49.0869255065918 
+DLL 2022-03-14 15:54:26.532580 - (1, 15) train_items_per_sec : 8804.684558714855 
+DLL 2022-03-14 15:54:26.532643 - (1, 15) train_iter_time : 2.090364495998074 
+DLL 2022-03-14 15:54:26.537712 - (1, 16) glob_iter/iters_per_epoch : 35/19 
+DLL 2022-03-14 15:54:27.700715 - (1, 16) train_loss : 43.142879486083984 
+DLL 2022-03-14 15:54:28.638177 - (1, 16) train_items_per_sec : 7893.937484431675 
+DLL 2022-03-14 15:54:28.638239 - (1, 16) train_iter_time : 2.1004726770006528 
+DLL 2022-03-14 15:54:28.644148 - (1, 17) glob_iter/iters_per_epoch : 36/19 
+DLL 2022-03-14 15:54:29.766324 - (1, 17) train_loss : 48.75777053833008 
+DLL 2022-03-14 15:54:30.685485 - (1, 17) train_items_per_sec : 8762.365029749979 
+DLL 2022-03-14 15:54:30.685545 - (1, 17) train_iter_time : 2.0413438540017523 
+DLL 2022-03-14 15:54:30.691536 - (1, 18) glob_iter/iters_per_epoch : 37/19 
+DLL 2022-03-14 15:54:31.837623 - (1, 18) train_loss : 47.540130615234375 
+DLL 2022-03-14 15:54:32.798266 - (1, 18) train_items_per_sec : 8630.880780599338 
+DLL 2022-03-14 15:54:32.798327 - (1, 18) train_iter_time : 2.1067374769991147 
+DLL 2022-03-14 15:54:32.836542 - (1,) train_items_per_sec : 8606.582640485225 
+DLL 2022-03-14 15:54:32.836612 - (1,) train_loss : 47.540130615234375 
+DLL 2022-03-14 15:54:32.836636 - (1,) train_epoch_time : 40.50175427399881 
+DLL 2022-03-14 15:54:34.272168 - (1, 38, 0) val_items_per_sec : 16627.632078289294 
+DLL 2022-03-14 15:54:35.265733 - (1, 38, 1) val_items_per_sec : 17323.757243781325 
+DLL 2022-03-14 15:54:36.279944 - (1, 38, 2) val_items_per_sec : 18194.229997946848 
+DLL 2022-03-14 15:54:37.187173 - (1, 38, 3) val_items_per_sec : 3218.9651941701054 
+DLL 2022-03-14 15:54:37.225810 - (1,) val_loss : 51.00568103790283 
+DLL 2022-03-14 15:54:37.225883 - (1,) val_items_per_sec : 13841.146128546896 
+DLL 2022-03-14 15:54:37.229177 - () run_time : 92.28394363199914 
+DLL 2022-03-14 15:54:37.229221 - () val_loss : 51.00568103790283 
+DLL 2022-03-14 15:54:37.229241 - () train_items_per_sec : 8606.582640485225 
+DONE!

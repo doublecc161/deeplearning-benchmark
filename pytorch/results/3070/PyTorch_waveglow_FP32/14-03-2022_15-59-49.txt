@@ -1,0 +1,71 @@
+DLL 2022-03-14 15:59:51.972961 - PARAMETER output : ./ 
+DLL 2022-03-14 15:59:51.973029 - PARAMETER dataset_path : /data/tacotron2/LJSpeech-1.1 
+DLL 2022-03-14 15:59:51.973052 - PARAMETER model_name : WaveGlow 
+DLL 2022-03-14 15:59:51.973068 - PARAMETER log_file : nvlog.json 
+DLL 2022-03-14 15:59:51.973084 - PARAMETER anneal_steps : None 
+DLL 2022-03-14 15:59:51.973101 - PARAMETER anneal_factor : 0.1 
+DLL 2022-03-14 15:59:51.973118 - PARAMETER epochs : 2 
+DLL 2022-03-14 15:59:51.973134 - PARAMETER epochs_per_checkpoint : 50 
+DLL 2022-03-14 15:59:51.973148 - PARAMETER checkpoint_path :  
+DLL 2022-03-14 15:59:51.973162 - PARAMETER resume_from_last : False 
+DLL 2022-03-14 15:59:51.973177 - PARAMETER dynamic_loss_scaling : True 
+DLL 2022-03-14 15:59:51.973192 - PARAMETER amp : False 
+DLL 2022-03-14 15:59:51.973207 - PARAMETER cudnn_enabled : True 
+DLL 2022-03-14 15:59:51.973221 - PARAMETER cudnn_benchmark : True 
+DLL 2022-03-14 15:59:51.973235 - PARAMETER disable_uniform_initialize_bn_weight : False 
+DLL 2022-03-14 15:59:51.973248 - PARAMETER use_saved_learning_rate : False 
+DLL 2022-03-14 15:59:51.973261 - PARAMETER learning_rate : 0.0 
+DLL 2022-03-14 15:59:51.973277 - PARAMETER weight_decay : 0.0 
+DLL 2022-03-14 15:59:51.973290 - PARAMETER grad_clip_thresh : 65504.0 
+DLL 2022-03-14 15:59:51.973304 - PARAMETER batch_size : 1 
+DLL 2022-03-14 15:59:51.973317 - PARAMETER grad_clip : 5.0 
+DLL 2022-03-14 15:59:51.973330 - PARAMETER load_mel_from_disk : False 
+DLL 2022-03-14 15:59:51.973343 - PARAMETER training_files : filelists/ljs_audio_text_train_subset_625_filelist.txt 
+DLL 2022-03-14 15:59:51.973357 - PARAMETER validation_files : filelists/ljs_audio_text_val_filelist.txt 
+DLL 2022-03-14 15:59:51.973371 - PARAMETER text_cleaners : ['english_cleaners'] 
+DLL 2022-03-14 15:59:51.973388 - PARAMETER max_wav_value : 32768.0 
+DLL 2022-03-14 15:59:51.973402 - PARAMETER sampling_rate : 22050 
+DLL 2022-03-14 15:59:51.973416 - PARAMETER filter_length : 1024 
+DLL 2022-03-14 15:59:51.973428 - PARAMETER hop_length : 256 
+DLL 2022-03-14 15:59:51.973441 - PARAMETER win_length : 1024 
+DLL 2022-03-14 15:59:51.973454 - PARAMETER mel_fmin : 0.0 
+DLL 2022-03-14 15:59:51.973468 - PARAMETER mel_fmax : 8000.0 
+DLL 2022-03-14 15:59:51.973483 - PARAMETER rank : 0 
+DLL 2022-03-14 15:59:51.973496 - PARAMETER world_size : 1 
+DLL 2022-03-14 15:59:51.973509 - PARAMETER dist_url : tcp://localhost:23456 
+DLL 2022-03-14 15:59:51.973521 - PARAMETER group_name : group_name 
+DLL 2022-03-14 15:59:51.973534 - PARAMETER dist_backend : nccl 
+DLL 2022-03-14 15:59:51.973547 - PARAMETER bench_class :  
+DLL 2022-03-14 15:59:51.973561 - PARAMETER model_name : Tacotron2_PyT 
+/opt/conda/lib/python3.6/site-packages/torch/functional.py:1242: UserWarning: torch.norm is deprecated and may be removed in a future PyTorch release. Use torch.linalg.norm instead.
+  "torch.norm is deprecated and may be removed in a future PyTorch release. "
+DLL 2022-03-14 15:59:54.926538 - (0, 0) glob_iter/iters_per_epoch : 0/625 
+DLL 2022-03-14 15:59:56.692767 - (0, 0) train_loss : 0.006493109278380871 
+DLL 2022-03-14 15:59:57.131227 - (0, 0) train_items_per_sec : 3628.5925534876246 
+DLL 2022-03-14 15:59:57.131289 - (0, 0) train_iter_time : 2.204711573998793 
+DLL 2022-03-14 15:59:57.132291 - (0, 1) glob_iter/iters_per_epoch : 1/625 
+Traceback (most recent call last):
+  File "train.py", line 545, in <module>
+    main()
+  File "train.py", line 472, in main
+    y_pred = model(x)
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/workspace/examples/tacotron2/waveglow/model.py", line 231, in forward
+    output = self.WN[k]((audio_0, spect))
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/workspace/examples/tacotron2/waveglow/model.py", line 152, in forward
+    torch.IntTensor([self.n_channels]))
+RuntimeError: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript (most recent call last):
+  File "/workspace/examples/tacotron2/waveglow/model.py", line 37, in fused_add_tanh_sigmoid_multiply
+    in_act = input_a + input_b
+    t_act = torch.tanh(in_act[:, :n_channels_int, :])
+    s_act = torch.sigmoid(in_act[:, n_channels_int:, :])
+            ~~~~~~~~~~~~~ <--- HERE
+    acts = t_act * s_act
+    return acts
+RuntimeError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 7.77 GiB total capacity; 6.02 GiB already allocated; 9.19 MiB free; 6.29 GiB reserved in total by PyTorch)
+
+DONE!

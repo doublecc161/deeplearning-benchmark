@@ -1,0 +1,77 @@
+DLL 2022-03-14 15:28:58.369344 - PARAMETER output : ./ 
+DLL 2022-03-14 15:28:58.369391 - PARAMETER dataset_path : /data/tacotron2/LJSpeech-1.1 
+DLL 2022-03-14 15:28:58.369411 - PARAMETER model_name : WaveGlow 
+DLL 2022-03-14 15:28:58.369428 - PARAMETER log_file : nvlog.json 
+DLL 2022-03-14 15:28:58.369443 - PARAMETER anneal_steps : None 
+DLL 2022-03-14 15:28:58.369458 - PARAMETER anneal_factor : 0.1 
+DLL 2022-03-14 15:28:58.369474 - PARAMETER epochs : 2 
+DLL 2022-03-14 15:28:58.369489 - PARAMETER epochs_per_checkpoint : 50 
+DLL 2022-03-14 15:28:58.369504 - PARAMETER checkpoint_path :  
+DLL 2022-03-14 15:28:58.369518 - PARAMETER resume_from_last : False 
+DLL 2022-03-14 15:28:58.369533 - PARAMETER dynamic_loss_scaling : True 
+DLL 2022-03-14 15:28:58.369547 - PARAMETER amp : True 
+DLL 2022-03-14 15:28:58.369561 - PARAMETER cudnn_enabled : True 
+DLL 2022-03-14 15:28:58.369574 - PARAMETER cudnn_benchmark : True 
+DLL 2022-03-14 15:28:58.369587 - PARAMETER disable_uniform_initialize_bn_weight : False 
+DLL 2022-03-14 15:28:58.369600 - PARAMETER use_saved_learning_rate : False 
+DLL 2022-03-14 15:28:58.369614 - PARAMETER learning_rate : 0.0 
+DLL 2022-03-14 15:28:58.369628 - PARAMETER weight_decay : 0.0 
+DLL 2022-03-14 15:28:58.369641 - PARAMETER grad_clip_thresh : 65504.0 
+DLL 2022-03-14 15:28:58.369655 - PARAMETER batch_size : 1 
+DLL 2022-03-14 15:28:58.369668 - PARAMETER grad_clip : 5.0 
+DLL 2022-03-14 15:28:58.369681 - PARAMETER load_mel_from_disk : False 
+DLL 2022-03-14 15:28:58.369694 - PARAMETER training_files : filelists/ljs_audio_text_train_subset_625_filelist.txt 
+DLL 2022-03-14 15:28:58.369708 - PARAMETER validation_files : filelists/ljs_audio_text_val_filelist.txt 
+DLL 2022-03-14 15:28:58.369721 - PARAMETER text_cleaners : ['english_cleaners'] 
+DLL 2022-03-14 15:28:58.369736 - PARAMETER max_wav_value : 32768.0 
+DLL 2022-03-14 15:28:58.369751 - PARAMETER sampling_rate : 22050 
+DLL 2022-03-14 15:28:58.369764 - PARAMETER filter_length : 1024 
+DLL 2022-03-14 15:28:58.369777 - PARAMETER hop_length : 256 
+DLL 2022-03-14 15:28:58.369791 - PARAMETER win_length : 1024 
+DLL 2022-03-14 15:28:58.369804 - PARAMETER mel_fmin : 0.0 
+DLL 2022-03-14 15:28:58.369816 - PARAMETER mel_fmax : 8000.0 
+DLL 2022-03-14 15:28:58.369829 - PARAMETER rank : 0 
+DLL 2022-03-14 15:28:58.369842 - PARAMETER world_size : 1 
+DLL 2022-03-14 15:28:58.369855 - PARAMETER dist_url : tcp://localhost:23456 
+DLL 2022-03-14 15:28:58.369868 - PARAMETER group_name : group_name 
+DLL 2022-03-14 15:28:58.369881 - PARAMETER dist_backend : nccl 
+DLL 2022-03-14 15:28:58.369894 - PARAMETER bench_class :  
+DLL 2022-03-14 15:28:58.369907 - PARAMETER model_name : Tacotron2_PyT 
+Selected optimization level O1:  Insert automatic casts around Pytorch functions and Tensor methods.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+/opt/conda/lib/python3.6/site-packages/torch/functional.py:1242: UserWarning: torch.norm is deprecated and may be removed in a future PyTorch release. Use torch.linalg.norm instead.
+  "torch.norm is deprecated and may be removed in a future PyTorch release. "
+DLL 2022-03-14 15:29:01.291020 - (0, 0) glob_iter/iters_per_epoch : 0/625 
+DLL 2022-03-14 15:29:02.922737 - (0, 0) train_loss : 0.0011458824155852199 
+DLL 2022-03-14 15:29:03.388563 - (0, 0) train_items_per_sec : 3813.9314556884933 
+DLL 2022-03-14 15:29:03.388625 - (0, 0) train_iter_time : 2.097573093000392 
+DLL 2022-03-14 15:29:03.389661 - (0, 1) glob_iter/iters_per_epoch : 1/625 
+DLL 2022-03-14 15:29:03.511029 - (0, 1) train_loss : 0.0018724360270425677 
+Traceback (most recent call last):
+  File "train.py", line 545, in <module>
+    main()
+  File "train.py", line 493, in main
+    scaled_loss.backward()
+  File "/opt/conda/lib/python3.6/site-packages/torch/tensor.py", line 214, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/opt/conda/lib/python3.6/site-packages/torch/autograd/__init__.py", line 132, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+RuntimeError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 7.77 GiB total capacity; 6.12 GiB already allocated; 19.19 MiB free; 6.28 GiB reserved in total by PyTorch)
+DONE!
