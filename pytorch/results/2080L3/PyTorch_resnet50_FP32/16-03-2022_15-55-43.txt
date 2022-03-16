@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "./main.py", line 58, in <module>
+    import image_classification.resnet as models
+  File "/workspace/examples/resnet50v1.5/image_classification/__init__.py", line 14, in <module>
+    from . import logger
+  File "/workspace/examples/resnet50v1.5/image_classification/logger.py", line 31, in <module>
+    import dllogger
+ModuleNotFoundError: No module named 'dllogger'
+['/opt/conda/bin/python', '-u', './main.py', '/data/imagenet', '--arch', 'resnet50', '--epochs', '2', '--prof', '100', '--batch-size', '64', '--raport-file', 'benchmark.json', '--print-freq', '1', '--training-only']
+DONE!

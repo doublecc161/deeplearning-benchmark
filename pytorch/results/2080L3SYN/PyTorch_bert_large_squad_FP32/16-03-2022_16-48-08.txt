@@ -1,0 +1,14 @@
+Container nvidia build =  9332039
+out dir is .
+python   run_squad.py --init_checkpoint=/data/bert_large/bert_large_uncased.pt --do_train --train_file=/data/squad/v1.1/train-v1.1.json --train_batch_size=1  --do_lower_case  --bert_model=bert-large-uncased  --learning_rate=0.0  --seed=1  --num_train_epochs=1.0  --max_seq_length=384  --doc_stride=128  --output_dir=.  --vocab_file=/data/bert_large/bert-large-uncased-vocab.txt  --config_file=/data/bert_large/bert_config.json  --max_steps=100   |& tee ./logfile.txt
+Traceback (most recent call last):
+  File "run_squad.py", line 43, in <module>
+    from utils import is_main_process, format_step
+ImportError: cannot import name 'format_step'
+
+real	0m0.666s
+user	0m0.849s
+sys	0m0.920s
+awk: line 1: syntax error at or near *
+ training throughput: 
+DONE!
