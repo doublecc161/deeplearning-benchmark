@@ -10,11 +10,14 @@ DATA_PATH=$2
 GPU=$3
 
 CURRENTDATE=`date +"%Y-%m-%d %T"`
-LOG_FILE=logs/log_bench_${GPU}_test.log
+LOG_FILE=logs/log_bench_${GPU}.log
 
 mkdir -p logs
 
-echo "Starting new AI Benchmark using GPU:${GPU} and NGC:${NAME_NGC}"
+
+printf "\n\n#########################################################################\n"
+printf "Starting new AI Benchmark using GPU:${GPU} and NGC:${NAME_NGC}"
+
 
 echo "############## NEW LOG ################" >> ${LOG_FILE}
 echo "# ${CURRENTDATE}" >> ${LOG_FILE}
