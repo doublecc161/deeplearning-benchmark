@@ -1,0 +1,98 @@
+:::NVLOGv0.1.0 ncf 1647442332.237441063 (ncf.py:171) cpu_info: {"num": 16, "name": "AMD Ryzen 7 5800 8-Core Processor"}
+:::NVLOGv0.1.0 ncf 1647442332.242481709 (ncf.py:171) mem_info: {"ram": "31G"}
+:::NVLOGv0.1.0 ncf 1647442332.607154846 (ncf.py:171) gpu_info: {"driver_version": "510.47.03", "num": 1, "name": ["NVIDIA GeForce RTX 3070"], "mem": ["8192 MiB"]}
+:::NVLOGv0.1.0 ncf 1647442332.609039068 (ncf.py:174) args: {"data": "/data/ncf/cache/ml-20m", "epochs": 2, "batch_size": 24000, "valid_batch_size": 1048576, "factors": 64, "layers": [256, 256, 128, 64], "negative_samples": 4, "learning_rate": 0.0045, "topk": 10, "seed": 1, "threshold": 1.0, "beta1": 0.25, "beta2": 0.5, "eps": 1e-08, "dropout": 0.5, "checkpoint_dir": "/data/checkpoints/", "load_checkpoint_path": null, "mode": "train", "grads_accumulated": 1, "opt_level": "O2", "local_rank": 0, "distributed": false, "world_size": 1}
+Saving results to /data/checkpoints/
+:::NVLOGv0.1.0 ncf 1647442332.611533880 (ncf.py:184) preproc_hp_sample_eval_replacement: true
+:::NVLOGv0.1.0 ncf 1647442332.611812830 (ncf.py:185) input_hp_sample_train_replacement: true
+:::NVLOGv0.1.0 ncf 1647442332.612068176 (ncf.py:186) input_step_eval_neg_gen
+:::NVLOGv0.1.0 ncf 1647442333.537796021 (ncf.py:194) run_start
+:::NVLOGv0.1.0 ncf 1647442333.802563190 (ncf.py:201) preproc_hp_num_eval: 100
+:::NVLOGv0.1.0 ncf 1647442333.804532290 (ncf.py:207) input_size: 19861770
+:::NVLOGv0.1.0 ncf 1647442333.838381767 (ncf.py:216) input_batch_size: 24000
+:::NVLOGv0.1.0 ncf 1647442333.838612318 (ncf.py:217) input_order
+:::NVLOGv0.1.0 ncf 1647442333.838975906 (/workspace/examples/ncf/neumf.py:54) model_hp_mf_dim: 64
+:::NVLOGv0.1.0 ncf 1647442334.065494537 (/workspace/examples/ncf/neumf.py:62) model_hp_mlp_layer_sizes: [256, 256, 128, 64]
+Selected optimization level O2:  FP16 training with FP32 batchnorm and FP32 master weights.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O2
+cast_model_type        : torch.float16
+patch_torch_functions  : False
+keep_batchnorm_fp32    : True
+master_weights         : True
+loss_scale             : dynamic
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O2
+cast_model_type        : torch.float16
+patch_torch_functions  : False
+keep_batchnorm_fp32    : False
+master_weights         : True
+loss_scale             : dynamic
+NeuMF(
+  (mf_user_embed): Embedding(138493, 64)
+  (mf_item_embed): Embedding(26744, 64)
+  (mlp_user_embed): Embedding(138493, 128)
+  (mlp_item_embed): Embedding(26744, 128)
+  (mlp): ModuleList(
+    (0): Linear(in_features=256, out_features=256, bias=True)
+    (1): Linear(in_features=256, out_features=128, bias=True)
+    (2): Linear(in_features=128, out_features=64, bias=True)
+  )
+  (final): Linear(in_features=128, out_features=1, bias=True)
+)
+31832577 parameters
+:::NVLOGv0.1.0 ncf 1647442334.308179140 (ncf.py:246) opt_learning_rate: 0.0045
+:::NVLOGv0.1.0 ncf 1647442334.308429718 (ncf.py:247) opt_name: "Adam"
+:::NVLOGv0.1.0 ncf 1647442334.308647156 (ncf.py:248) opt_hp_Adam_beta1: 0.25
+:::NVLOGv0.1.0 ncf 1647442334.308873415 (ncf.py:249) opt_hp_Adam_beta2: 0.5
+:::NVLOGv0.1.0 ncf 1647442334.309100628 (ncf.py:250) opt_hp_Adam_epsilon: 1e-08
+:::NVLOGv0.1.0 ncf 1647442334.309327841 (ncf.py:251) model_hp_loss_fn: "binary_cross_entropy"
+:::NVLOGv0.1.0 ncf 1647442334.309544086 (ncf.py:279) train_loop
+:::NVLOGv0.1.0 ncf 1647442334.309765100 (ncf.py:282) train_epoch_start: 0
+:::NVLOGv0.1.0 ncf 1647442334.309983015 (ncf.py:283) input_hp_num_neg: 4
+:::NVLOGv0.1.0 ncf 1647442334.310194969 (ncf.py:284) input_step_train_neg_gen
+:::NVLOGv0.1.0 ncf 1647442361.735045195 (ncf.py:318) train_throughput: 3621183.001427099
+:::NVLOGv0.1.0 ncf 1647442361.735444069 (ncf.py:319) train_epoch_stop: 0
+:::NVLOGv0.1.0 ncf 1647442361.735785961 (ncf.py:320) eval_start: 0
+ncf.py:146: UserWarning: indexing with dtype torch.uint8 is now deprecated, please use a dtype torch.bool instead. (Triggered internally at  ../aten/src/ATen/native/IndexingUtils.h:25.)
+  temp[dup_mask] = -1
+ncf.py:153: UserWarning: This overload of nonzero is deprecated:
+	nonzero(Tensor input, *, Tensor out)
+Consider using one of the following signatures instead:
+	nonzero(Tensor input, *, bool as_tuple) (Triggered internally at  ../torch/csrc/utils/python_arg_parser.cpp:882.)
+  ndcg = (math.log(2) / (torch.nonzero(ifzero)[:,1].view(-1).to(torch.float)+2).log_()).sum()
+:::NVLOGv0.1.0 ncf 1647442362.147820950 (ncf.py:155) eval_size: {"epoch": 0, "value": 13987793}
+:::NVLOGv0.1.0 ncf 1647442362.148076057 (ncf.py:156) eval_hp_num_users: 138493
+:::NVLOGv0.1.0 ncf 1647442362.148315191 (ncf.py:157) eval_hp_num_neg: 100
+Epoch 0: HR@10 = 0.8561, NDCG@10 = 0.5772, train_time = 27.42, val_time = 0.41
+:::NVLOGv0.1.0 ncf 1647442362.148624897 (ncf.py:333) eval_accuracy: {"epoch": 0, "value": 0.8560865892138952}
+:::NVLOGv0.1.0 ncf 1647442362.148834705 (ncf.py:334) eval_target: 1.0
+:::NVLOGv0.1.0 ncf 1647442362.149041653 (ncf.py:335) eval_stop: 0
+:::NVLOGv0.1.0 ncf 1647442362.149253130 (ncf.py:340) eval_throughput: 33805938.07719195
+New best hr! Saving the model to:  /data/checkpoints/model.pth
+:::NVLOGv0.1.0 ncf 1647442362.661090136 (ncf.py:282) train_epoch_start: 1
+:::NVLOGv0.1.0 ncf 1647442362.661446333 (ncf.py:283) input_hp_num_neg: 4
+:::NVLOGv0.1.0 ncf 1647442362.661701918 (ncf.py:284) input_step_train_neg_gen
+Traceback (most recent call last):
+  File "ncf.py", line 366, in <module>
+    main()
+  File "ncf.py", line 288, in main
+    epoch_users, epoch_items, epoch_label = dataloading.prepare_epoch_train_data(train_ratings, nb_items, args)
+  File "/workspace/examples/ncf/dataloading.py", line 95, in prepare_epoch_train_data
+    epoch_items = torch.cat((train_items, neg_items))
+RuntimeError: CUDA out of memory. Tried to allocate 758.00 MiB (GPU 0; 7.77 GiB total capacity; 5.29 GiB already allocated; 557.19 MiB free; 6.36 GiB reserved in total by PyTorch)
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/opt/conda/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/opt/conda/lib/python3.6/site-packages/torch/distributed/launch.py", line 261, in <module>
+    main()
+  File "/opt/conda/lib/python3.6/site-packages/torch/distributed/launch.py", line 257, in main
+    cmd=cmd)
+subprocess.CalledProcessError: Command '['/opt/conda/bin/python', '-u', 'ncf.py', '--local_rank=0', '--data', '/data/ncf/cache/ml-20m', '--epochs', '2', '--batch_size', '24000', '--opt_level', 'O2']' returned non-zero exit status 1.
+DONE!
