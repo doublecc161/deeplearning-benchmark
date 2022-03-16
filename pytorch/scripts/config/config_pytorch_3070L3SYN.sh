@@ -10,7 +10,7 @@ PyTorch_SSD_FP32_PARAMS=(
              --batch-size             "16"
              --benchmark-warmup       "50"
              --benchmark-iterations   "200"
-	     --learning-rate          "0"
+             --learning-rate          "0"
            )
 
 PyTorch_SSD_AMP_PARAMS=(
@@ -21,7 +21,7 @@ PyTorch_SSD_AMP_PARAMS=(
              --benchmark-warmup       "50"
              --benchmark-iterations   "200"
              --amp
-	     --learning-rate          "0"
+             --learning-rate          "0"
            )
 
 PyTorch_resnet50_FP32_PARAMS=(
@@ -122,7 +122,7 @@ PyTorch_ncf_FP32_PARAMS=(
             --data                    "/data/ncf/cache/ml-20m"
             --epochs                  "1"
             --batch_size              "240000"
-	    --valid_batch_size        "120000"
+            --valid_batch_size        "120000"
             --opt_level               "O0"
            )
 
@@ -132,7 +132,7 @@ PyTorch_ncf_FP16_PARAMS=(
             --data                    "/data/ncf/cache/ml-20m"
             --epochs                  "1"
             --batch_size              "480000"
-	    --valid_batch_size        "240000"
+            --valid_batch_size        "240000"
             --opt_level               "O2"
            )
 
@@ -248,8 +248,8 @@ PyTorch_transformerxllarge_FP16_PARAMS=(
 PyTorch_tacotron2_FP32_PARAMS=(
             "examples/tacotron2"
             args
-            -o        "./"
             --model-name              "Tacotron2"
+            --output_directory        "./"
             --learning-rate           "0.0"
             --epochs                  "2"
             --batch-size              "16"
@@ -264,8 +264,8 @@ PyTorch_tacotron2_FP32_PARAMS=(
 PyTorch_tacotron2_FP16_PARAMS=(
             "examples/tacotron2"
             args
-            -o        "./"
             --model-name              "Tacotron2"
+            --output_directory        "./"
             --learning-rate           "0.0"
             --epochs                  "2"
             --batch-size              "32"
@@ -282,8 +282,8 @@ PyTorch_tacotron2_FP16_PARAMS=(
 PyTorch_waveglow_FP32_PARAMS=(
             "examples/tacotron2"
             args
-            -o        "./"
             --model-name              "WaveGlow"
+            --output_directory        "./"
             --learning-rate           "0.0"
             --epochs                  "2"
             --segment-length          "8000"
@@ -300,8 +300,8 @@ PyTorch_waveglow_FP32_PARAMS=(
 PyTorch_waveglow_FP16_PARAMS=(
             "examples/tacotron2"
             args
-            -o        "./"
             --model-name              "WaveGlow"
+            --output_directory        "./"
             --learning-rate           "0.0"
             --epochs                  "2"
             --segment-length          "8000"
