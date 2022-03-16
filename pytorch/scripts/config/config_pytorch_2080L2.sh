@@ -10,7 +10,7 @@ PyTorch_SSD_FP32_PARAMS=(
              --batch-size             "16"
              --benchmark-warmup       "50"
              --benchmark-iterations   "200"
-	       --learning-rate          "0"
+             --learning-rate          "0"
            )
 
 PyTorch_SSD_AMP_PARAMS=(
@@ -21,7 +21,7 @@ PyTorch_SSD_AMP_PARAMS=(
              --benchmark-warmup       "50"
              --benchmark-iterations   "200"
              --amp
-	       --learning-rate          "0"
+             --learning-rate          "0"
            )
 
 PyTorch_resnet50_FP32_PARAMS=(
@@ -368,8 +368,8 @@ PyTorch_bert_large_squad_FP16_PARAMS=(
             "2.0"
             "1"
             "0.0"
+            "fp16"
             "${NUM_GPU}"
-            "1"
             "1"
             "/data/squad/v1.1"
             "/data/bert_large/bert-large-uncased-vocab.txt"
