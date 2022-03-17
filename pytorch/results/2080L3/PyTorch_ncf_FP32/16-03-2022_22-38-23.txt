@@ -1,0 +1,67 @@
+:::NVLOGv0.1.0 ncf 1647470304.813224554 (ncf.py:171) cpu_info: {"num": 16, "name": "AMD Ryzen 7 3700X 8-Core Processor"}
+:::NVLOGv0.1.0 ncf 1647470304.818903446 (ncf.py:171) mem_info: {"ram": "31G"}
+:::NVLOGv0.1.0 ncf 1647470305.012541771 (ncf.py:171) gpu_info: {"driver_version": "510.47.03", "num": 1, "name": ["NVIDIA GeForce RTX 2080"], "mem": ["8192 MiB"]}
+:::NVLOGv0.1.0 ncf 1647470305.013787746 (ncf.py:174) args: {"data": "/data/ncf/cache/ml-20m", "epochs": 1, "batch_size": 240000, "valid_batch_size": 120000, "factors": 64, "layers": [256, 256, 128, 64], "negative_samples": 4, "learning_rate": 0.0045, "topk": 10, "seed": 1, "threshold": 1.0, "beta1": 0.25, "beta2": 0.5, "eps": 1e-08, "dropout": 0.5, "checkpoint_dir": "/data/checkpoints/", "load_checkpoint_path": null, "mode": "train", "grads_accumulated": 1, "opt_level": "O0", "local_rank": 0, "distributed": false, "world_size": 1}
+Saving results to /data/checkpoints/
+:::NVLOGv0.1.0 ncf 1647470305.014274359 (ncf.py:184) preproc_hp_sample_eval_replacement: true
+:::NVLOGv0.1.0 ncf 1647470305.014489412 (ncf.py:185) input_hp_sample_train_replacement: true
+:::NVLOGv0.1.0 ncf 1647470305.014697075 (ncf.py:186) input_step_eval_neg_gen
+:::NVLOGv0.1.0 ncf 1647470305.851169109 (ncf.py:194) run_start
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.6/tarfile.py", line 189, in nti
+    n = int(s.strip() or "0", 8)
+ValueError: invalid literal for int() with base 8: '30290323'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.6/tarfile.py", line 2297, in next
+    tarinfo = self.tarinfo.fromtarfile(self)
+  File "/opt/conda/lib/python3.6/tarfile.py", line 1093, in fromtarfile
+    obj = cls.frombuf(buf, tarfile.encoding, tarfile.errors)
+  File "/opt/conda/lib/python3.6/tarfile.py", line 1035, in frombuf
+    chksum = nti(buf[148:156])
+  File "/opt/conda/lib/python3.6/tarfile.py", line 191, in nti
+    raise InvalidHeaderError("invalid header")
+tarfile.InvalidHeaderError: invalid header
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.6/site-packages/torch/serialization.py", line 665, in _load
+    return legacy_load(f)
+  File "/opt/conda/lib/python3.6/site-packages/torch/serialization.py", line 576, in legacy_load
+    with closing(tarfile.open(fileobj=f, mode='r:', format=tarfile.PAX_FORMAT)) as tar, \
+  File "/opt/conda/lib/python3.6/tarfile.py", line 1589, in open
+    return func(name, filemode, fileobj, **kwargs)
+  File "/opt/conda/lib/python3.6/tarfile.py", line 1619, in taropen
+    return cls(name, mode, fileobj, **kwargs)
+  File "/opt/conda/lib/python3.6/tarfile.py", line 1482, in __init__
+    self.firstmember = self.next()
+  File "/opt/conda/lib/python3.6/tarfile.py", line 2309, in next
+    raise ReadError(str(e))
+tarfile.ReadError: invalid header
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "ncf.py", line 366, in <module>
+    main()
+  File "ncf.py", line 196, in main
+    train_ratings = torch.load(args.data+'/train_ratings.pt', map_location=torch.device('cuda:{}'.format(args.local_rank)))
+  File "/opt/conda/lib/python3.6/site-packages/torch/serialization.py", line 482, in load
+    return _load(opened_file, map_location, pickle_module, **pickle_load_args)
+  File "/opt/conda/lib/python3.6/site-packages/torch/serialization.py", line 669, in _load
+    raise RuntimeError("{} is a zip archive (did you mean to use torch.jit.load()?)".format(f.name))
+RuntimeError: /data/ncf/cache/ml-20m/train_ratings.pt is a zip archive (did you mean to use torch.jit.load()?)
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/opt/conda/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/opt/conda/lib/python3.6/site-packages/torch/distributed/launch.py", line 253, in <module>
+    main()
+  File "/opt/conda/lib/python3.6/site-packages/torch/distributed/launch.py", line 249, in main
+    cmd=cmd)
+subprocess.CalledProcessError: Command '['/opt/conda/bin/python', '-u', 'ncf.py', '--local_rank=0', '--data', '/data/ncf/cache/ml-20m', '--epochs', '1', '--batch_size', '240000', '--valid_batch_size', '120000', '--opt_level', 'O0']' returned non-zero exit status 1.
+DONE!

@@ -8,3 +8,13 @@ CUDNN Version: 7.6.5
 Motherboard: Micro-Star International Co., Ltd. B450 GAMING PRO CARBON AC (MS-7B85) 1.0
 OS: Ubuntu 18.04.3 LTS
 PyTorch Version: 1.4.0a0+a5b4d78
+CPU: AMD Ryzen 7 3700X 8-Core Processor
+CPU Memory: 31G
+GPU: NVIDIA_GeForce_RTX_2080
+GPU Memory: 8192_MiB
+NVIDIA driver: 510.47.03
+CUDA Version: V10.2.89
+CUDNN Version: 7.6.5
+Motherboard: Micro-Star International Co., Ltd. B450 GAMING PRO CARBON AC (MS-7B85) 1.0
+OS: Ubuntu 18.04.3 LTS
+PyTorch Version: 1.4.0a0+a5b4d78

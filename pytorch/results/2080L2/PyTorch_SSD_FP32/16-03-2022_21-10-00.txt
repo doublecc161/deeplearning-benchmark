@@ -1,0 +1,19 @@
+Downloading: "https://download.pytorch.org/models/resnet50-19c8e357.pth" to /root/.cache/torch/checkpoints/resnet50-19c8e357.pth
+  0%|          | 0.00/97.8M [00:00<?, ?B/s]  3%|▎         | 2.74M/97.8M [00:00<00:03, 28.4MB/s]  6%|▌         | 5.71M/97.8M [00:00<00:03, 29.1MB/s]  9%|▉         | 8.65M/97.8M [00:00<00:03, 29.6MB/s] 12%|█▏        | 11.6M/97.8M [00:00<00:03, 30.0MB/s] 15%|█▍        | 14.6M/97.8M [00:00<00:02, 30.2MB/s] 18%|█▊        | 17.5M/97.8M [00:00<00:02, 30.3MB/s] 21%|██        | 20.4M/97.8M [00:00<00:02, 30.3MB/s] 24%|██▍       | 23.3M/97.8M [00:00<00:02, 30.3MB/s] 27%|██▋       | 26.2M/97.8M [00:00<00:02, 30.3MB/s] 30%|██▉       | 29.1M/97.8M [00:01<00:02, 30.4MB/s] 33%|███▎      | 32.0M/97.8M [00:01<00:02, 30.5MB/s] 36%|███▌      | 34.9M/97.8M [00:01<00:02, 30.4MB/s] 39%|███▊      | 37.9M/97.8M [00:01<00:02, 30.6MB/s] 42%|████▏     | 40.8M/97.8M [00:01<00:01, 30.7MB/s] 45%|████▍     | 43.8M/97.8M [00:01<00:01, 30.7MB/s] 48%|████▊     | 46.7M/97.8M [00:01<00:01, 30.8MB/s] 51%|█████     | 49.7M/97.8M [00:01<00:01, 30.8MB/s] 54%|█████▍    | 52.7M/97.8M [00:01<00:01, 31.0MB/s] 57%|█████▋    | 55.7M/97.8M [00:01<00:01, 30.8MB/s] 60%|█████▉    | 58.6M/97.8M [00:02<00:01, 30.8MB/s] 63%|██████▎   | 61.6M/97.8M [00:02<00:01, 30.8MB/s] 66%|██████▌   | 64.5M/97.8M [00:02<00:01, 30.8MB/s] 69%|██████▉   | 67.5M/97.8M [00:02<00:01, 30.9MB/s] 72%|███████▏  | 70.4M/97.8M [00:02<00:00, 30.8MB/s] 75%|███████▌  | 73.4M/97.8M [00:02<00:00, 30.6MB/s] 78%|███████▊  | 76.3M/97.8M [00:02<00:00, 30.6MB/s] 81%|████████  | 79.2M/97.8M [00:02<00:00, 30.7MB/s] 84%|████████▍ | 82.2M/97.8M [00:02<00:00, 30.4MB/s] 87%|████████▋ | 85.1M/97.8M [00:02<00:00, 30.6MB/s] 90%|█████████ | 88.1M/97.8M [00:03<00:00, 30.5MB/s] 93%|█████████▎| 91.0M/97.8M [00:03<00:00, 30.6MB/s] 96%|█████████▌| 94.0M/97.8M [00:03<00:00, 30.5MB/s] 99%|█████████▉| 96.9M/97.8M [00:03<00:00, 30.6MB/s]100%|██████████| 97.8M/97.8M [00:03<00:00, 30.6MB/s]
+Using seed = 1259
+loading annotations into memory...
+Done (t=0.34s)
+creating index...
+index created!
+WARNING: `ColorTwist` is now deprecated. Use `Hsv/BrightnessContrast` instead
+[/opt/dali/dali/operators/color/color_twist.h:181] The Operators: `ColorTwist`, `Hue`, `Saturation`, `Brightness`, `Contrast`, are deprecated, not supported, and will be removed in version 0.20. Please use `BrightnessContrast` and `Hsv` instead.
+/opt/conda/lib/python3.6/site-packages/torch/nn/_reduction.py:43: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+/opt/conda/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:122: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+Done benchmarking. Total images: 3200	total time: 39.261	Average images/sec: 81.506	Median images/sec: 81.521
+Training performance = 81.52149963378906 FPS
+epoch: 0	time: 65.98504877090454
+WARNING:root:DALI iterator does not support resetting while epoch is not finished. Ignoring...
+total training time: 65.98504877090454
+DONE!
