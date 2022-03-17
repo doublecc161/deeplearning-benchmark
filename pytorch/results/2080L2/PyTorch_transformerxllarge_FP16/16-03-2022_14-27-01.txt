@@ -1,0 +1,63 @@
+Experiment dir : LM-TFM
+Namespace(adaptive=False, append_dataset=False, append_time=False, attn_type=0, batch_chunk=1, batch_size=1, clamp_len=-1, clip=0.25, clip_nonemb=False, cuda=True, d_embed=1024, d_head=64, d_inner=4096, d_model=1024, data='/data/transformer-xl/wikitext-103', dataset='wt103', debug=False, decay_rate=0.5, div_val=1, dropatt=0.2, dropout=0.2, emb_init='normal', emb_init_range=0.01, eta_min=0.001, eval_batch_size=16, eval_interval=5000, eval_max_steps=-1, eval_tgt_len=128, ext_len=0, fp16=True, gpu0_bsz=-1, init='normal', init_range=0.1, init_std=0.02, local_rank=0, log_all_ranks=False, log_interval=10, lr=0.0, lr_min=0.0, max_step=400, max_step_scheduler=None, mem_len=256, mom=0.0, multi_gpu=None, n_head=16, n_layer=18, not_tied=False, optim='adam', patience=0, pre_lnorm=False, proj_init_std=0.01, restart='', roll=False, same_length=False, sample_softmax=-1, save_all=False, scheduler='cosine', seed=1111, target_perplexity=None, target_throughput=None, tgt_len=256, tied=True, varlen=False, vocab='word', warmup_step=16000, weight_decay=0.0, work_dir='LM-TFM')
+Loading cached dataset...
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.6/tarfile.py", line 189, in nti
+    n = int(s.strip() or "0", 8)
+ValueError: invalid literal for int() with base 8: 'ry\nVocab'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.6/tarfile.py", line 2297, in next
+    tarinfo = self.tarinfo.fromtarfile(self)
+  File "/opt/conda/lib/python3.6/tarfile.py", line 1093, in fromtarfile
+    obj = cls.frombuf(buf, tarfile.encoding, tarfile.errors)
+  File "/opt/conda/lib/python3.6/tarfile.py", line 1035, in frombuf
+    chksum = nti(buf[148:156])
+  File "/opt/conda/lib/python3.6/tarfile.py", line 191, in nti
+    raise InvalidHeaderError("invalid header")
+tarfile.InvalidHeaderError: invalid header
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.6/site-packages/torch/serialization.py", line 665, in _load
+    return legacy_load(f)
+  File "/opt/conda/lib/python3.6/site-packages/torch/serialization.py", line 576, in legacy_load
+    with closing(tarfile.open(fileobj=f, mode='r:', format=tarfile.PAX_FORMAT)) as tar, \
+  File "/opt/conda/lib/python3.6/tarfile.py", line 1589, in open
+    return func(name, filemode, fileobj, **kwargs)
+  File "/opt/conda/lib/python3.6/tarfile.py", line 1619, in taropen
+    return cls(name, mode, fileobj, **kwargs)
+  File "/opt/conda/lib/python3.6/tarfile.py", line 1482, in __init__
+    self.firstmember = self.next()
+  File "/opt/conda/lib/python3.6/tarfile.py", line 2309, in next
+    raise ReadError(str(e))
+tarfile.ReadError: invalid header
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train.py", line 810, in <module>
+    main()
+  File "train.py", line 552, in main
+    corpus = get_lm_corpus(args.data, args.dataset, args.vocab)
+  File "/workspace/examples/transformer-xl/pytorch/data_utils.py", line 284, in get_lm_corpus
+    corpus = torch.load(fn)
+  File "/opt/conda/lib/python3.6/site-packages/torch/serialization.py", line 482, in load
+    return _load(opened_file, map_location, pickle_module, **pickle_load_args)
+  File "/opt/conda/lib/python3.6/site-packages/torch/serialization.py", line 669, in _load
+    raise RuntimeError("{} is a zip archive (did you mean to use torch.jit.load()?)".format(f.name))
+RuntimeError: /data/transformer-xl/wikitext-103/cache.pt is a zip archive (did you mean to use torch.jit.load()?)
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/opt/conda/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/opt/conda/lib/python3.6/site-packages/torch/distributed/launch.py", line 253, in <module>
+    main()
+  File "/opt/conda/lib/python3.6/site-packages/torch/distributed/launch.py", line 249, in main
+    cmd=cmd)
+subprocess.CalledProcessError: Command '['/opt/conda/bin/python', '-u', 'train.py', '--local_rank=0', '--data', '/data/transformer-xl/wikitext-103', '--max_step', '400', '--batch_size', '1', '--dataset', 'wt103', '--n_layer', '18', '--d_model', '1024', '--n_head', '16', '--d_head', '64', '--d_inner', '4096', '--dropout', '0.2', '--dropatt', '0.2', '--optim', 'adam', '--lr', '0.0', '--warmup_step', '16000', '--tgt_len', '256', '--mem_len', '256', '--eval_tgt_len', '128', '--eval_interval', '5000', '--cuda', '--fp16']' returned non-zero exit status 1.
+DONE!

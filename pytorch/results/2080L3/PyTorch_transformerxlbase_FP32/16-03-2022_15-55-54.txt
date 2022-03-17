@@ -1,0 +1,41 @@
+usage: train.py [-h] [--work_dir WORK_DIR] [--append_dataset] [--append_time]
+                [--cuda] [--fp16] [--restart RESTART] [--debug]
+                [--log_all_ranks] [--save-all] [--log_interval LOG_INTERVAL]
+                [--target_throughput TARGET_THROUGHPUT]
+                [--target_perplexity TARGET_PERPLEXITY] [--data DATA]
+                [--dataset {wt103,lm1b,enwik8,text8}] [--vocab {word,bpe}]
+                [--n_layer N_LAYER] [--n_head N_HEAD] [--d_head D_HEAD]
+                [--d_embed D_EMBED] [--d_model D_MODEL] [--d_inner D_INNER]
+                [--dropout DROPOUT] [--dropatt DROPATT] [--pre_lnorm]
+                [--attn_type ATTN_TYPE] [--not_tied] [--clamp_len CLAMP_LEN]
+                [--adaptive] [--div_val DIV_VAL]
+                [--sample_softmax SAMPLE_SOFTMAX] [--init INIT]
+                [--emb_init EMB_INIT] [--init_range INIT_RANGE]
+                [--emb_init_range EMB_INIT_RANGE] [--init_std INIT_STD]
+                [--proj_init_std PROJ_INIT_STD]
+                [--optim {adam,sgd,adagrad,lamb,jitlamb}] [--lr LR]
+                [--mom MOM] [--scheduler {cosine,inv_sqrt,dev_perf,constant}]
+                [--max_step_scheduler MAX_STEP_SCHEDULER]
+                [--warmup_step WARMUP_STEP] [--decay_rate DECAY_RATE]
+                [--lr_min LR_MIN] [--clip CLIP] [--weight_decay WEIGHT_DECAY]
+                [--clip_nonemb] [--patience PATIENCE] [--eta_min ETA_MIN]
+                [--max_step MAX_STEP] [--batch_size BATCH_SIZE]
+                [--batch_chunk BATCH_CHUNK] [--roll] [--tgt_len TGT_LEN]
+                [--ext_len EXT_LEN] [--mem_len MEM_LEN] [--seed SEED]
+                [--multi_gpu {ddp,dp}] [--gpu0_bsz GPU0_BSZ] [--same_length]
+                [--varlen] [--eval_tgt_len EVAL_TGT_LEN]
+                [--eval_batch_size EVAL_BATCH_SIZE]
+                [--eval_max_steps EVAL_MAX_STEPS]
+                [--eval_interval EVAL_INTERVAL] [--local_rank LOCAL_RANK]
+train.py: error: unrecognized arguments: --no_eval
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/opt/conda/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/opt/conda/lib/python3.6/site-packages/torch/distributed/launch.py", line 253, in <module>
+    main()
+  File "/opt/conda/lib/python3.6/site-packages/torch/distributed/launch.py", line 249, in main
+    cmd=cmd)
+subprocess.CalledProcessError: Command '['/opt/conda/bin/python', '-u', 'train.py', '--local_rank=0', '--data', '/data/transformer-xl/wikitext-103', '--max_step', '400', '--batch_size', '1', '--dataset', 'wt103', '--n_layer', '16', '--d_model', '512', '--n_head', '8', '--d_head', '64', '--d_inner', '2048', '--dropout', '0.1', '--dropatt', '0.0', '--optim', 'jitlamb', '--lr', '0.0', '--eta_min', '0.001', '--warmup_step', '1000', '--tgt_len', '192', '--mem_len', '192', '--eval_tgt_len', '192', '--log_interval', '10', '--eval_interval', '5000', '--roll', '--cuda', '--no_eval']' returned non-zero exit status 2.
+DONE!

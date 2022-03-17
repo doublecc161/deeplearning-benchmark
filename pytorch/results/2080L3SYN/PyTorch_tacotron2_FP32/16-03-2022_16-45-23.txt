@@ -1,0 +1,500 @@
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449125.285608768 (/workspace/examples/tacotron2/dllogger/logger.py:279) run_start
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449125.314148426 (/workspace/examples/tacotron2/dllogger/logger.py:251) cpu_info: {"num": 16, "name": "AMD Ryzen 7 3700X 8-Core Processor"}
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449125.323263645 (/workspace/examples/tacotron2/dllogger/logger.py:251) mem_info: {"ram": "31G"}
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449125.621399641 (/workspace/examples/tacotron2/dllogger/logger.py:251) gpu_info: {"driver_version": "510.47.03", "num": 1, "name": ["NVIDIA GeForce RTX 2080"], "mem": ["8192 MiB"]}
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449125.624103785 (/workspace/examples/tacotron2/dllogger/logger.py:251) args: {"output_directory": "./", "dataset_path": "/data/tacotron2/LJSpeech-1.1", "model_name": "Tacotron2", "log_file": "nvlog.json", "anneal_steps": null, "anneal_factor": 0.1, "epochs": 2, "epochs_per_checkpoint": 50, "checkpoint_path": "", "seed": 1234, "dynamic_loss_scaling": true, "amp_run": false, "cudnn_enabled": true, "cudnn_benchmark": false, "disable_uniform_initialize_bn_weight": false, "use_saved_learning_rate": false, "learning_rate": 0.0, "weight_decay": 1e-06, "grad_clip_thresh": 1.0, "batch_size": 16, "grad_clip": 5.0, "load_mel_from_disk": false, "training_files": "filelists/ljs_audio_text_train_subset_625_filelist.txt", "validation_files": "filelists/ljs_audio_text_val_filelist.txt", "text_cleaners": ["english_cleaners"], "max_wav_value": 32768.0, "sampling_rate": 22050, "filter_length": 1024, "hop_length": 256, "win_length": 1024, "mel_fmin": 0.0, "mel_fmax": 8000.0, "rank": 0, "world_size": 1, "dist_url": "tcp://localhost:23456", "group_name": "group_name", "dist_backend": "nccl", "mask_padding": false, "n_mel_channels": 80, "n_symbols": 148, "symbols_embedding_dim": 512, "encoder_kernel_size": 5, "encoder_n_convolutions": 3, "encoder_embedding_dim": 512, "n_frames_per_step": 1, "decoder_rnn_dim": 1024, "prenet_dim": 256, "max_decoder_steps": 2000, "gate_threshold": 0.5, "p_attention_dropout": 0.1, "p_decoder_dropout": 0.1, "decoder_no_early_stopping": false, "attention_rnn_dim": 1024, "attention_dim": 128, "attention_location_n_filters": 32, "attention_location_kernel_size": 31, "postnet_embedding_dim": 512, "postnet_kernel_size": 5, "postnet_n_convolutions": 5}
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449125.624592781 (/workspace/examples/tacotron2/dllogger/logger.py:251) run_start
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449127.747145891 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_loop
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449127.747720480 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_epoch_start: 0
+Batch: 0/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449128.033770323 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449128.851846218 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 45.290077209472656
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449130.117009878 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449130.117311954 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4050.5317154229306
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449130.117558479 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 2.0841708183288574
+Batch: 1/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449130.119876385 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449130.709179878 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 50.33403778076172
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449132.000299215 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449132.001238823 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5035.628860647427
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449132.001487017 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8807978630065918
+Batch: 2/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449132.003811359 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 2
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449132.589335918 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 49.59039306640625
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449133.898019552 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 2
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449133.899337292 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5057.96386540843
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449133.899966240 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8946359157562256
+Batch: 3/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449133.902656555 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 3
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449134.473918200 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 48.04096603393555
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449135.729499817 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 3
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449135.730437517 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4855.910758690482
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449135.731611967 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8272576332092285
+Batch: 4/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449135.735296011 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 4
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449136.314301252 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 50.07557678222656
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449137.608824492 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 4
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449137.610729694 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5081.265525895099
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449137.611612320 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8739426136016846
+Batch: 5/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449137.615142345 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 5
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449138.176623821 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 50.86272430419922
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449139.402749538 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 5
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449139.403539896 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5136.404745700515
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449139.404952765 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.7880210876464844
+Batch: 6/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449139.409787178 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 6
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449139.998733759 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 47.42033004760742
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449141.291600227 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 6
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449141.293615341 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4782.710780906664
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449141.295532465 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8821961879730225
+Batch: 7/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449141.299233198 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 7
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449141.876759529 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 52.51346969604492
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449143.164881468 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 7
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449143.167921066 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5454.242619204162
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449143.168858767 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.86607027053833
+Batch: 8/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449143.172436476 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 8
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449143.747108459 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 48.109344482421875
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449145.007952213 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 8
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449145.009501219 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4906.9762599207015
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449145.011330843 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8359575271606445
+Batch: 9/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449145.015333414 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 9
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449145.586535454 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 49.84583282470703
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449146.838162184 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 9
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449146.839688778 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5072.782192317138
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449146.841535568 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8232598304748535
+Batch: 10/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449146.845370531 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 10
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449147.402643919 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 58.569786071777344
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449148.628250837 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 10
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449148.629542351 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5959.717106290496
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449148.631292343 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.7833061218261719
+Batch: 11/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449148.635425568 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 11
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449149.233266354 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 51.959259033203125
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449150.540583849 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 11
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449150.541273594 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5194.196217834534
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449150.542774677 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.9055883884429932
+Batch: 12/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449150.548239946 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 12
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449151.132049084 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 45.187652587890625
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449152.411654711 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 12
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449152.412989855 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4519.185296123711
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449152.414815903 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8638315200805664
+Batch: 13/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449152.419056416 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 13
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449152.973459721 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 52.36107635498047
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449154.196412086 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 13
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449154.198256493 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5394.945056748917
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449154.199781179 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.7777752876281738
+Batch: 14/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449154.203284740 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 14
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449154.773352385 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 49.122039794921875
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449156.031407595 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 14
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449156.032626867 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4972.832577323513
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449156.034655571 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8285353183746338
+Batch: 15/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449156.038761139 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 15
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449156.610547304 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 49.656532287597656
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449157.876481056 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 15
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449157.878037453 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5008.909210192831
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449157.879988670 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8381247520446777
+Batch: 16/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449157.883523941 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 16
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449158.444505930 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 48.46620178222656
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449159.676783323 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 16
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449159.677931070 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5035.479381067144
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449159.679294109 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.7936723232269287
+Batch: 17/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449159.684495211 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 17
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449160.264960766 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 42.740135192871094
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449161.569371223 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 17
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449161.571230412 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4275.183469705665
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449161.573041201 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8852992057800293
+Batch: 18/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449161.576523542 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 18
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449162.169234991 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 46.50859069824219
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449163.495862246 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 18
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449163.497201681 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4759.439668269277
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449163.499216795 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.9197638034820557
+Batch: 19/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449163.503424406 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 19
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449164.008113861 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 46.15214920043945
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449165.090167761 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 19
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449165.092927933 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4743.059188645038
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449165.093854666 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.5871613025665283
+Batch: 20/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449165.097578049 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 20
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449165.640685797 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 47.2315788269043
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449166.824234962 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 20
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449166.825131178 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4954.621570361167
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449166.827628613 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.727074384689331
+Batch: 21/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449166.831586123 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 21
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449167.391837835 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 46.6807746887207
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449168.641856909 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 21
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449168.643890858 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4804.796468853408
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449168.645220280 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8106906414031982
+Batch: 22/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449168.648757219 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 22
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449169.237037420 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 51.554466247558594
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449170.556360483 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 22
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449170.558125019 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5275.6042334423655
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449170.560001135 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.9080278873443604
+Batch: 23/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449170.563668489 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 23
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449171.165517807 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 39.76270294189453
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449172.466603756 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 23
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449172.468165636 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 3974.0485084783427
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449172.469914198 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.903348684310913
+Batch: 24/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449172.473365307 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 24
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449173.021684170 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 47.79701614379883
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449174.184805155 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 24
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449174.186236858 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4799.462742759316
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449174.188138008 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.7118582725524902
+Batch: 25/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449174.191594839 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 25
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449174.779792547 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 44.845970153808594
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449176.057269812 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 25
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449176.058298349 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4466.002997067963
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449176.060310364 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.866098165512085
+Batch: 26/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449176.065090418 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 26
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449176.638540030 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 50.304962158203125
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449177.877096415 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 26
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449177.878820658 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5084.85419676319
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449177.880144119 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.812441349029541
+Batch: 27/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449177.883703232 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 27
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449178.464162111 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 49.64521026611328
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449179.747289181 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 27
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449179.748072147 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5001.565720005664
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449179.749526501 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8640162944793701
+Batch: 28/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449179.754854441 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 28
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449180.294058084 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 51.660003662109375
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449181.464263678 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 28
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449181.465896368 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5285.864199677534
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449181.467105389 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.709843397140503
+Batch: 29/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449181.471210241 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 29
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449182.070113182 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 43.533294677734375
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449183.349522591 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 29
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449183.351902723 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4394.429379838823
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449183.353116512 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8787422180175781
+Batch: 30/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449183.356595993 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 30
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449183.921277285 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 49.939544677734375
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449185.167331934 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 30
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449185.168931484 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5166.245563070721
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449185.170715094 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8111798763275146
+Batch: 31/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449185.174584866 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 31
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449185.733799934 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 43.427284240722656
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449186.960786581 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 31
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449186.962722778 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4348.40163743227
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449186.964358807 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.7866334915161133
+Batch: 32/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449186.967833042 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 32
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449187.567965984 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 54.47275924682617
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449188.892759562 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 32
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449188.894644737 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5455.114223515572
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449188.896439552 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.925349235534668
+Batch: 33/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449188.899945259 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 33
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449189.481739998 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 46.53874969482422
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449190.784598589 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 33
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449190.786092520 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4735.080900711596
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449190.787940979 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8850786685943604
+Batch: 34/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449190.791965961 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 34
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449191.366481304 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 50.86394500732422
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449192.641345739 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 34
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449192.642581463 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5203.79075214928
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449192.644620657 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8498053550720215
+Batch: 35/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449192.649618626 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 35
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449193.232542753 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 48.44120788574219
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449194.540072203 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 35
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449194.541296959 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4903.0090799004
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449194.543010712 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8908796310424805
+Batch: 36/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449194.547675371 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 36
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449195.118651867 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 48.96499252319336
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449196.348753214 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 36
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449196.350308180 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4868.702247346404
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449196.352137327 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.801506757736206
+Batch: 37/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449196.355482817 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 37
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449196.927641869 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 49.69916534423828
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449198.258199453 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 37
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449198.259393454 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5064.575467303712
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449198.261186123 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.903022289276123
+Batch: 38/39 epoch 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449198.265644073 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 38
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449198.837428808 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 42.82381057739258
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449200.100754261 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 38
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449200.102166891 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4383.197188159155
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449200.103967428 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8354182243347168
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449200.184585571 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_epoch_stop: 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449200.185960054 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_epoch_items/sec: 4863.320842625562
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449200.187043428 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_epoch_avg_items/sec: 4909.403373670552
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449200.187551022 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_epoch_avg_loss: 48.487015748635315
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449200.188050747 (/workspace/examples/tacotron2/dllogger/logger.py:251) epoch_time: 72.43733477592468
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449200.188554525 (/workspace/examples/tacotron2/dllogger/logger.py:251) eval_start: 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449203.863723516 (/workspace/examples/tacotron2/dllogger/logger.py:251) val_iter_loss: 65.72907257080078
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449203.864654303 (/workspace/examples/tacotron2/dllogger/logger.py:251) eval_stop: 0
+Saving model and optimizer state at epoch 0 to ./checkpoint_Tacotron2_0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449204.446874380 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_epoch_start: 1
+Batch: 0/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449204.739267349 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449205.359575748 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 45.26505661010742
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449206.624522448 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 0
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449206.626726151 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4475.511601240109
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449206.628435612 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8862648010253906
+Batch: 1/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449206.632241964 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449207.229956150 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 50.33443832397461
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449208.516576767 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449208.519347906 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5025.153842047433
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449208.520175219 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.884718418121338
+Batch: 2/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449208.524141550 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 2
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449209.141473770 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 49.57719421386719
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449210.451648951 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 2
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449210.453270674 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4970.473247390701
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449210.455511570 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.927985429763794
+Batch: 3/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449210.459470749 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 3
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449211.039174557 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 48.05907440185547
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449212.295414209 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 3
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449212.296843052 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4831.965524001779
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449212.299127340 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8363127708435059
+Batch: 4/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449212.303266287 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 4
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449212.875232935 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 50.085811614990234
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449214.173252344 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 4
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449214.174832821 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5090.879397203992
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449214.176798105 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.87040376663208
+Batch: 5/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449214.180764914 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 5
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449214.732338190 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 50.86240005493164
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449215.961356640 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 5
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449215.962618351 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5156.59242124382
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449215.964103222 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.7810211181640625
+Batch: 6/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449215.969119787 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 6
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449216.546581268 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 47.449676513671875
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449217.848899364 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 6
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449217.850098372 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4787.755980332186
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449217.852271318 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8802127838134766
+Batch: 7/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449217.856461048 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 7
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449218.430044889 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 52.508338928222656
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449219.725274324 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 7
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449219.727027178 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5444.95119041272
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449219.729110956 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8692545890808105
+Batch: 8/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449219.732879877 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 8
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449220.299276590 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 48.11733627319336
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449221.564956665 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 8
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449221.567186356 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4916.193127696172
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449221.568959713 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8325154781341553
+Batch: 9/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449221.572484016 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 9
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449222.140581846 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 49.827030181884766
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449223.389372826 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 9
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449223.391515732 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5089.370066387392
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449223.392564058 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.817317247390747
+Batch: 10/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449223.397041082 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 10
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449223.968882799 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 58.53993225097656
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449225.195478439 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 10
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449225.197278738 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5908.1641300178635
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449225.199179888 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.7988667488098145
+Batch: 11/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449225.202749014 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 11
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449225.787343502 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 51.94956588745117
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449227.099789858 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 11
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449227.100939989 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5216.423043311473
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449227.101669550 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8974688053131104
+Batch: 12/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449227.105122566 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 12
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449227.681878090 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 45.18269729614258
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449228.955152988 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 12
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449228.957024574 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4551.85628303059
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449228.958953142 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8504538536071777
+Batch: 13/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449228.962634325 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 13
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449229.519358873 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 52.3581657409668
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449230.744727612 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 13
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449230.745642662 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5380.563751294062
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449230.747780800 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.782526969909668
+Batch: 14/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449230.752705812 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 14
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449231.322620392 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 49.12631607055664
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449232.579200983 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 14
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449232.580886602 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4977.198818432917
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449232.582895279 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8269312381744385
+Batch: 15/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449232.586666584 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 15
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449233.155589819 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 49.647979736328125
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449234.418275595 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 15
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449234.419361830 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5025.564718224105
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449234.420325994 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8320329189300537
+Batch: 16/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449234.424266338 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 16
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449234.981849909 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 48.4620475769043
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449236.214023352 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 16
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449236.215974092 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5045.295406182536
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449236.217183113 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.7901825904846191
+Batch: 17/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449236.220524073 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 17
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449236.833060980 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 42.75672912597656
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449238.136512995 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 17
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449238.138328314 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4205.746134147592
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449238.139893055 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.9164257049560547
+Batch: 18/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449238.143311501 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 18
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449238.730320215 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 46.4915771484375
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449240.060647726 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 18
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449240.062851191 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4764.376776989876
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449240.064593077 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.9177744388580322
+Batch: 19/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449240.068276644 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 19
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449240.572156429 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 46.16584014892578
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449241.657975435 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 19
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449241.660197973 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4734.20030245173
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449241.661419868 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.5901312828063965
+Batch: 20/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449241.664716482 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 20
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449242.202447891 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 47.222957611083984
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449243.392749071 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 20
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449243.395273685 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4950.63994059893
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449243.395990610 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.7284634113311768
+Batch: 21/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449243.399046659 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 21
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449243.959027290 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 46.67610168457031
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449245.209955931 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 21
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449245.211657763 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4803.083202234058
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449245.213354588 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8113365173339844
+Batch: 22/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449245.216739655 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 22
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449245.809664488 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 51.5713996887207
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449247.124421120 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 22
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449247.125880241 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5275.370881383366
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449247.127596855 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.9081122875213623
+Batch: 23/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449247.132037163 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 23
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449247.721035957 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 39.77703094482422
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449249.022440910 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 23
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449249.024227858 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4000.3444135015798
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449249.025720119 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8908371925354004
+Batch: 24/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449249.030160427 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 24
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449249.564064503 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 47.816741943359375
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449250.731641769 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 24
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449250.733357906 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4827.414472548778
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449250.735217571 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.7019462585449219
+Batch: 25/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449250.738752842 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 25
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449251.313287020 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 44.86017608642578
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449252.586760759 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 25
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449252.588603497 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4508.66867846885
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449252.590162992 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8484392166137695
+Batch: 26/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449252.593965769 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 26
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449253.150147676 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 50.30955123901367
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449254.389333963 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 26
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449254.391187191 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5131.902469877143
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449254.392727375 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.7958252429962158
+Batch: 27/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449254.396357059 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 27
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449254.979466677 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 49.65605926513672
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449256.270389557 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 27
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449256.271895885 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4973.695976881377
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449256.273859739 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8744611740112305
+Batch: 28/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449256.277630091 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 28
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449256.817881346 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 51.67825698852539
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449257.992703199 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 28
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449257.993996859 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5268.411803162037
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449257.995697975 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.7155075073242188
+Batch: 29/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449257.999271870 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 29
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449258.575245142 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 43.559410095214844
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449259.856661081 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 29
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449259.857757330 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4443.924902820109
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449259.859724998 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8578171730041504
+Batch: 30/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449259.864410162 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 30
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449260.429578543 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 49.94919204711914
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449261.677540302 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 30
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449261.679150105 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5159.449056522415
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449261.680776358 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.813565731048584
+Batch: 31/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449261.685131073 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 31
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449262.243004084 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 43.415679931640625
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449263.473379612 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 31
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449263.475750685 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4343.432619810278
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449263.476632833 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.788677453994751
+Batch: 32/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449263.479905605 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 32
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449264.070203304 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 54.48566436767578
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449265.394830942 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 32
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449265.396317482 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5483.600699018578
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449265.397872210 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.9153473377227783
+Batch: 33/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449265.402135849 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 33
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449265.985334873 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 46.515281677246094
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449267.289084435 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 33
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449267.290472984 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4729.345220208429
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449267.292241096 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8873648643493652
+Batch: 34/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449267.296792269 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 34
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449267.894522429 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 50.86595916748047
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449269.171761990 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 34
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449269.173949718 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5132.6820991503455
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449269.175939083 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8754327297210693
+Batch: 35/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449269.179650545 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 35
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449269.772033215 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 48.45851135253906
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449271.080425262 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 35
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449271.081461191 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4876.398604851168
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449271.083569765 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.901198148727417
+Batch: 36/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449271.087976933 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 36
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449271.652604103 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 48.95425033569336
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449272.884245872 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 36
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449272.885233879 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4881.754817231309
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449272.886900425 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.7966899871826172
+Batch: 37/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449272.892044067 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 37
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449273.478580236 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 49.682945251464844
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449274.810080528 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 37
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449274.812130213 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 5024.0905772222395
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449274.813654900 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.9183571338653564
+Batch: 38/39 epoch 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449274.817002296 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_start: 38
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449275.392661810 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iteration_loss: 42.81353759765625
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449276.658374310 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_stop: 38
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449276.660919666 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_iter_items/sec: 4368.280475727514
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449276.662380695 (/workspace/examples/tacotron2/dllogger/logger.py:251) iter_time: 1.8416857719421387
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449276.741417646 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_epoch_stop: 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449276.742212296 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_epoch_items/sec: 4872.9018757667445
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449276.742928982 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_epoch_avg_items/sec: 4917.454530083526
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449276.743198872 (/workspace/examples/tacotron2/dllogger/logger.py:251) train_epoch_avg_loss: 48.48810039422451
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449276.743458748 (/workspace/examples/tacotron2/dllogger/logger.py:251) epoch_time: 72.29490947723389
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449276.743721008 (/workspace/examples/tacotron2/dllogger/logger.py:251) eval_start: 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449280.416622162 (/workspace/examples/tacotron2/dllogger/logger.py:251) val_iter_loss: 65.79112243652344
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449280.417554855 (/workspace/examples/tacotron2/dllogger/logger.py:251) eval_stop: 1
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449280.419232607 (/workspace/examples/tacotron2/dllogger/logger.py:251) run_time: 154.79413843154907
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449280.419710636 (/workspace/examples/tacotron2/dllogger/logger.py:251) run_final
+training time 154.79413843154907
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449280.420241594 (/workspace/examples/tacotron2/dllogger/logger.py:251) run_time: 155.2029469013214
+:::NVLOGv0.2.2 Tacotron2_PyT 1647449280.420717001 (/workspace/examples/tacotron2/dllogger/logger.py:282) run_stop
+DONE!
