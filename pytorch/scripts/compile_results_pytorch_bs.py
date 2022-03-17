@@ -158,7 +158,7 @@ def gather(list_test, key, name, df, path_config, watt, price):
     df.at[name, 'price'] = price * num_gpu
 
 
-def main():
+def main(raw_args=None):
     parser = argparse.ArgumentParser(description='Gather benchmark results.')
 
     parser.add_argument('--path', type=str, default='scripts/config',
@@ -172,7 +172,7 @@ def main():
                         choices=['single', 'multiple', 'all'],
                         help='Choose system type (single or multiple GPUs)')
 
-    args = parser.parse_args()
+    args = parser.parse_args(raw_args)
 
     list_test_all = list_test_fp32.copy()
     for key, value in list_test_fp16.items():

@@ -3,6 +3,7 @@ import os
 import sys
 import re
 import argparse
+import linecache
 
 
 import pandas as pd
@@ -173,22 +174,26 @@ def gather_last(list_test, list_system, name, system, config_name, df, version, 
     column_name, key, pos = list_test[version][name]
     pattern = re.compile(key)
 
-    path = path_result + '/' + system + '/' + name
+    path = os.path.join(path_result, system, name)
     count = 0.000001
     total_throughput = 0.0
 
     if os.path.exists(path):
+        parsing_issue = False
         for filename in os.listdir(path):
+            # TODO: Check how this handles multiple available results in the same folder
+            # TODO: Add filename to df to have date of result in table
             if filename.endswith(".txt"):
                 flag = False
                 throughput = 0
+                file = os.path.join(path, filename)
                 # Sift through all lines and only keep the last occurrence
-                for i, line in enumerate(open(os.path.join(path, filename))):
+                for i, line in enumerate(open(file)):
 
                     for match in re.finditer(pattern, line):
                         try:
                             throughput = float(match.group().split(' ')[pos])
-                        except:
+                        except Exception as e:
                             pass
 
                 if throughput > 0:
@@ -197,16 +202,23 @@ def gather_last(list_test, list_system, name, system, config_name, df, version, 
                     flag = True
 
                 if not flag:
-                    print(system + "/" + name + " " + filename + ": something wrong")
-        df.at[config_name, column_name] = int(round(total_throughput / count, 2))
+                    print(">>>>> !! " + system + "/" + name + " " + filename + ": something wrong !! <<<<<")
+                    print(linecache.getline(file, i-1))
+                    print(linecache.getline(file, i))
+                    print(linecache.getline(file, i+1))
+                    parsing_issue = True
+        if parsing_issue:
+            df.at[config_name, column_name] = pd.NA
+        else:
+            df.at[config_name, column_name] = int(round(total_throughput / count, 2))
     else:
-        df.at[config_name, column_name] = 0
+        df.at[config_name, column_name] = pd.NA
 
     df.at[config_name, 'num_gpu'] = list_system[system][0][1]
     df.at[config_name, 'watt'] = list_system[system][2] * int(list_system[system][0][1])
     df.at[config_name, 'price'] = list_system[system][3] * int(list_system[system][0][1])
 
-def main():
+def main(raw_args=None):
     parser = argparse.ArgumentParser(description='Gather benchmark results.')
 
     parser.add_argument('--path', type=str, default='results',
@@ -220,7 +232,7 @@ def main():
                         choices=['single', 'multiple', 'all'],
                         help='Choose system type (single or multiple GPUs)')
 
-    args = parser.parse_args()
+    args = parser.parse_args(raw_args)
 
     if args.precision == 'fp32':
         list_test = list_test_fp32
@@ -261,6 +273,8 @@ def main():
             gather_last(list_test, list_system, test_name, key, config_name, df, version, args.path)
 
     df.index.name = 'name_gpu'
+
+    print(df)
 
     df.to_csv('pytorch-train-throughput-' + args.precision + '.csv')
 
