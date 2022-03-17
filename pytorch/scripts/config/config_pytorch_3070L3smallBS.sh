@@ -246,7 +246,7 @@ PyTorch_tacotron2_FP32_PARAMS=(
             "examples/tacotron2"
             args
             --model-name              "Tacotron2"
-            --output_directory        "./"
+            --output                  "./"
             --learning-rate           "0.0"
             --epochs                  "2"
             --batch-size              "16"
@@ -262,7 +262,7 @@ PyTorch_tacotron2_FP16_PARAMS=(
             "examples/tacotron2"
             args
             --model-name              "Tacotron2"
-            --output_directory        "./"
+            --output                  "./"
             --learning-rate           "0.0"
             --epochs                  "2"
             --batch-size              "32"
@@ -280,7 +280,7 @@ PyTorch_waveglow_FP32_PARAMS=(
             "examples/tacotron2"
             args
             --model-name              "WaveGlow"
-            --output_directory        "./"
+            --output                  "./"
             --learning-rate           "0.0"
             --epochs                  "2"
             --segment-length          "8000"
@@ -298,7 +298,7 @@ PyTorch_waveglow_FP16_PARAMS=(
             "examples/tacotron2"
             args
             --model-name              "WaveGlow"
-            --output_directory        "./"
+            --output                  "./"
             --learning-rate           "0.0"
             --epochs                  "2"
             --segment-length          "8000"

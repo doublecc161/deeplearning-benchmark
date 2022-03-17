@@ -171,6 +171,7 @@ list_test_fp16 = [
         }
 ]
 
+
 def gather_last(list_test, list_system, name, system, config_name, df, version, path_result):
     column_name, key, pos = list_test[version][name]
     pattern = re.compile(key)
@@ -218,6 +219,7 @@ def gather_last(list_test, list_system, name, system, config_name, df, version, 
     df.at[config_name, 'num_gpu'] = list_system[system][0][1]
     df.at[config_name, 'watt'] = list_system[system][2] * int(list_system[system][0][1])
     df.at[config_name, 'price'] = list_system[system][3] * int(list_system[system][0][1])
+
 
 def main(raw_args=None):
     parser = argparse.ArgumentParser(description='Gather benchmark results.')
@@ -278,6 +280,9 @@ def main(raw_args=None):
     print(df)
 
     df.to_csv('pytorch-train-throughput-' + args.precision + '.csv')
+
+    return df
+
 
 if __name__ == "__main__":
     main()
