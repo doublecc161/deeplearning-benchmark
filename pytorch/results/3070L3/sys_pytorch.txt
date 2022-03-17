@@ -8,3 +8,13 @@ CUDNN Version: ..
 Motherboard: LENOVO 3716 SDK0J40709 WIN 3259679265188
 OS: Ubuntu 18.04.5 LTS
 PyTorch Version: 1.7.0a0+7036e91
+CPU: AMD Ryzen 7 5800 8-Core Processor
+CPU Memory: 31G
+GPU: NVIDIA_GeForce_RTX_3070
+GPU Memory: 8192_MiB
+NVIDIA driver: 510.47.03
+CUDA Version: V11.1.74
+CUDNN Version: ..
+Motherboard: LENOVO 3716 SDK0J40709 WIN 3259679265188
+OS: Ubuntu 18.04.5 LTS
+PyTorch Version: 1.7.0a0+7036e91
